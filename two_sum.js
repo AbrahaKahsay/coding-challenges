@@ -25,10 +25,8 @@ var twoSum = function(nums, target) {
                 return [i, j]
             }
         }
-      
         // if (nums[i]+nums[i+1]===target){
         //     return [i, i+1]
         // }
     }
-   
 };
