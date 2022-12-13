@@ -9,5 +9,9 @@ Example 2:
 
 Input: nums = [-7,-3,2,3,11]
 Output: [4,9,9,49,121]
-
 ____________________________________________
+// my solution
+var sortedSquares = function(nums) {
+  let sqr_nums = nums.map((num)=>num*num);
+  return sqr_nums.sort((a,b)=>a-b)
+}
