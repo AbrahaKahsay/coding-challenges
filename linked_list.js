@@ -11,3 +11,28 @@ class Node {
 		this.next = null
 	}
 }
+
+// As in the above code, we define a class Node having two properties: 
+// element and next. Element holds the data of a node while next holds the pointer 
+// to the next node, which is initialized to the null value.
+
+// Now, let’s see an implementation of the Linked List class: 
+// linkedlist class
+class LinkedList {
+	constructor()
+	{
+		this.head = null;
+		this.size = 0;
+	}
+
+	// functions to be implemented
+	// add(element)
+	// insertAt(element, location)
+	// removeFrom(location)
+	// removeElement(element)
+
+	// Helper Methods
+	// isEmpty
+	// size_Of_List
+	// PrintList
+}
