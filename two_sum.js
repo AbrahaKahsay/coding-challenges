@@ -15,7 +15,6 @@
 
 // Input: nums = [3,3], target = 6
 // Output: [0,1]
-_________________________________________
 
 // my solution
 var twoSum = function(nums, target) {
