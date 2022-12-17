@@ -99,6 +99,7 @@ class LinkedList {
         return null;
         }
     }
+    
 }
 
 let ll = new LinkedList();
