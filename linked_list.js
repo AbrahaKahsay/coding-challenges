@@ -42,6 +42,12 @@ class LinkedList {
         }
         return this;
     }
+
+    delete(value) {
+        if (!this.head) {
+        return null;
+        }
+    }
 }
 
 let ll = new LinkedList();
