@@ -33,6 +33,12 @@ class LinkedList {
         if (this.head === null){
             this.head = newNode;
             this.tail = newNode;
+            // Then, we get the value of this.tail and set that objects next property to be our newly created
+            // LinkedListNode object.
+            const currentTail = this.tail;
+            currentTail.next = newNode;
+        // Attach new node to the end of linked list.
+        this.tail = newNode;
         }
         return this;
     }
