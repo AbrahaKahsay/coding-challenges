@@ -53,4 +53,4 @@ class LinkedList {
 let ll = new LinkedList();
 console.log(ll.append(30));
 console.log(ll.append(40));
-// console.log(ll)
+console.log(ll)
