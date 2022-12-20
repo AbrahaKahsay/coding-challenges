@@ -19,18 +19,23 @@
 // 4. For maximum sum leave the first element
 
 function miniMaxSum(arr) {
-let arr_sorted = arr.sort( a,b => a-b )
+let arr_sorted = arr.sort((a,b) => a-b )
+console.log(arr_sorted)
 
 let min_sum = 0;
 let max_sum = 0;
 
 for(let i=0; i<arr_sorted.length-1; i++){
-    return min_sum += arr_sorted[i]
+    min_sum += arr_sorted[i]
 }
 
 for(let i=1; i<arr_sorted.length; i++){
-    return max_sum += arr_sorted[i]
+    max_sum += arr_sorted[i]
 }
+
+console.log(min_sum + " " + max_sum)
 }
 
 miniMaxSum([1,3,5,7,9])
+
+
