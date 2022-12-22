@@ -227,4 +227,11 @@ function addFriend(userObj, friend) {
 
 console.log(addFriend(user, 'Pete'));
 
-//
+//-------------------------------
+// Faulsy bouncer
+
+function bouncer(arr) {
+  return arr;
+}
+
+bouncer([7, "ate", "", false, 9]);
