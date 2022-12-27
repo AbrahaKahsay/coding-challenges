@@ -1,12 +1,13 @@
-// React is composable. we can produce custom components that can be reused
-// React is declerative. you need to tell it what should be done and it handles the other things.
-// The opposite for declerative is imperative where you describe how the code should be excuted like
-// the way we do in vanilla JavaScript.
+// 1. React is composable. we can produce custom components that can be reused
+// 2. React is declerative. you need to tell it what should be done and it handles the other things.
+//      The opposite for declerative is imperative where you describe how the code should be excuted like
+//      the way we do in vanilla JavaScript.
 
 
 // Declarative way to program in react.
  ReactDOM.render(<h1 className="header">Hello, React!</h1>, document.getElementById("root"))
-// Imperative way
+
+ // Imperative way
 // Challenge - recreate the above line of code in vanilla JS by creating and
 // appending an h1 to our div#root (without using innerHTML).
 
@@ -19,3 +20,28 @@ const h1 = document.createElement("h1");
 h1.textContent = "I am doing imperative way of writing JavaScript";
 h1.className = "header";
 document.getElementById("root").appendChild(h1)
+
+Challenge: 
+
+// Create a navbar in JSX:
+//     - Use the semantic `nav` element as the parent wrapper
+//     - Have an h1 element with the brand name of your "website"
+//     - Insert an unordered list for the other nav elements
+//         - Inside the `ul`, have three `li`s for "Pricing",
+//         "About", and "Contact"
+//     - Don't worry about styling yet - it'll just be plain-looking HTML for now
+
+    const navbar = (
+        <div>
+            <nav>
+                <h1>Kenean</h1>
+                <ul>
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
+    )
+
+ReactDOM.render(navbar, document.getElementById("root"))
