@@ -4,6 +4,8 @@
 // the way we do in vanilla JavaScript.
 
 
+// Declarative way to program in react.
+ ReactDOM.render(<h1 className="header">Hello, React!</h1>, document.getElementById("root"))
 // Imperative way
 // Challenge - recreate the above line of code in vanilla JS by creating and
 // appending an h1 to our div#root (without using innerHTML).
