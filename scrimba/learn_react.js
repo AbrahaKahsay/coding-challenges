@@ -32,16 +32,14 @@ Challenge:
 //     - Don't worry about styling yet - it'll just be plain-looking HTML for now
 
     const navbar = (
-        <div>
-            <nav>
-                <h1>Kenean</h1>
-                <ul>
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <h1>Kenean Academy</h1>
+            <ul>
+                <li>Menu</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
     )
 
 ReactDOM.render(navbar, document.getElementById("root"))
