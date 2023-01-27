@@ -5,7 +5,6 @@ function main() {
     // loop through the array to check if the next
     // element is same with the previous and count
     let arr = n.toString(2);
-    let newArr = arr.split('')
     let count = 0;
     for(let i=0; i<newArr.length; i++){
         // console.log(newArr[i])
