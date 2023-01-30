@@ -34,7 +34,35 @@ class Student extends Person {
     *   @return A character denoting the grade.
     */
     // Write your method here
+    calculate(){
+        
+        let sum = 0
+        let average;
     
+        for(let i=0; i<this.testScores.length; i++){
+            sum = sum+ this.testScores[i]
+            average = sum/(this.testScores.length)
+        }
+        
+        if(average>=90 && average<=100){
+            return "O"
+        }
+        if(average>=80 && average<90){
+            return "E"
+        }
+        if(average>=70 && average<80){
+            return "A"
+        }
+        if(average>=55 && average<70){
+            return "P"
+        }
+        if(average>=40 && average<55){
+            return "D"
+        }
+        if (average <40) {
+            return "T"
+        }
+    }
 }
 
 function main() {
