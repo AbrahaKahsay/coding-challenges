@@ -1,3 +1,18 @@
+class Person {
+    constructor(firstName, lastName, identification) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.idNumber = identification;
+    }
+    
+    printPerson() {
+        console.log(
+            "Name: " + this.lastName + ", " + this.firstName 
+            + "\nID: " + this.idNumber
+        )
+    }
+}
+
 class Student extends Person {
     /*	
     *   Class Constructor
@@ -8,7 +23,12 @@ class Student extends Person {
     *   @param scores - An array of integers denoting the Person's test scores.
     */
     // Write your constructor here
-
+    constructor(firstName, lastName, identification, testScores){
+        
+        super(firstName, lastName, identification);
+        this.testScores = testScores;
+        
+    }
     /*	
     *   Method Name: calculate
     *   @return A character denoting the grade.
