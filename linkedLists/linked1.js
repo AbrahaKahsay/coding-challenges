@@ -25,19 +25,19 @@ class Node {
       this.length++;
     }
   
-    // removeFromHead() {
-    //   if (!this.head) return null;
+    removeFromHead() {
+      if (!this.head) return null;
   
-    //   const value = this.head.value;
-    //   this.head = this.head.next;
-    //   this.length--;
+      const value = this.head.value;
+      this.head = this.head.next;
+      this.length--;
   
-    //   if (this.length === 0) {
-    //     this.tail = null;
-    //   }
+      if (this.length === 0) {
+        this.tail = null;
+      }
   
-    //   return value;
-    // }
+      return value;
+    }
   
     // find(value) {
     //   let currentNode = this.head;
