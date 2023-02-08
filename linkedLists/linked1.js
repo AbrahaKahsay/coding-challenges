@@ -39,16 +39,16 @@ class Node {
       return value;
     }
   
-    // find(value) {
-    //   let currentNode = this.head;
+    find(value) {
+      let currentNode = this.head;
   
-    //   while (currentNode) {
-    //     if (currentNode.value === value) return currentNode;
-    //     currentNode = currentNode.next;
-    //   }
+      while (currentNode) {
+        if (currentNode.value === value) return currentNode;
+        currentNode = currentNode.next;
+      }
   
-    //   return null;
-    // }
+      return null;
+    }
   }
   
   let ll = new LinkedList
