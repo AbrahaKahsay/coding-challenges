@@ -10,10 +10,18 @@
 // Output: "10101"
 
 var addBinary = function(a, b) {
-    
-    let a_decimal = parseInt(a, 2);
-    let b_decimal = parseInt(b, 2);
+    // return (parseInt(a, 2) + parseInt(b, 2)).toString(2)
+    let result = "";
+    let carry = 0;
+    let i = a.length - 1;
+    let j = b.length - 1;
 
-    let c = a_decimal + b_decimal
-    return c.toString(2)
+    while (i >= 0 || j >= 0 || carry > 0) {
+        carry += i >= 0 ? parseInt(a[i--], 2) : 0;
+        carry += j >= 0 ? parseInt(b[j--], 2) : 0;
+        result = (carry % 2) + result;
+        carry = Math.floor(carry / 2);
+    }
+
+  return result;
 };
