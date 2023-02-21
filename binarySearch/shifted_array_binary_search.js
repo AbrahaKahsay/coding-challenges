@@ -23,9 +23,17 @@ function shiftedBinarySearch(arr, target){
             // target is in the right half
             left = mid + 1;
             }
+        }else {
+            // right half is sorted
+            if (target > arr[mid] && target <= arr[right]) {
+              // target is in the right half
+              left = mid + 1;
+            } else {
+              // target is in the left half
+              right = mid - 1;
+            }
         }
-
-        }
-
+    }
+    // target not found
     return -1
 }
