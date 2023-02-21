@@ -8,12 +8,24 @@ function shiftedBinarySearch(arr, target){
 
     while( left <= right){
         let mid = Math.floor((left+right)/2)
+        
+        if(arr[mid]==target){
+            return mid
+        }
 
-    if(arr[mid]==target){
-        return mid
-    }
+        // check which half is sorted
+        if (arr[left] <= arr[mid]) {
+            // left half is sorted
+            if (target >= arr[left] && target < arr[mid]) {
+            // target is in the left half
+            right = mid - 1;
+            } else {
+            // target is in the right half
+            left = mid + 1;
+            }
+        }
 
-    }
+        }
 
     return -1
 }
