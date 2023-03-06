@@ -27,3 +27,7 @@ function letterCases(string){
 }
 
 console.log(letterCases("Abraha"))
+
+// 3. Object Destructuring:
+// Given an object with the properties firstName and lastName, write a function
+//  that returns an array [firstName, lastName] using object destructuring.
