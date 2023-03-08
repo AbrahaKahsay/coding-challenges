@@ -41,3 +41,17 @@ const { firstName, lastName } = person;
   console.log(firstName); // 'John'
   console.log(lastName); // 'Doe'
   
+//4.   Creating a new object with a prototype:
+  const personProto = {
+    greet: function() {
+      console.log(`Hello, my name is ${this.name}.`);
+    }
+  };
+  
+  const john = Object.create(personProto);
+  john.name = 'John';
+  john.age = 30;
+  john.city = 'New York';
+  
+  john.greet(); // 'Hello, my name is John.'
+  
