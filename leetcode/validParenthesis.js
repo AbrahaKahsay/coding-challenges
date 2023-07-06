@@ -15,7 +15,7 @@ var isValid = function(s) {
         let lastChar = stack[stack.length-1]  // last character in the stack for comparison
         if(s[i]==='('|| s[i]==='[' || s[i]==='{'){
             stack.push(s[i])
-        } else if(s[i]===')'&& lastChar==='(' || s[i]===']'&& lastChar==='[' || s[i]==='}'&         lastChar==='{') {
+        } else if(s[i]===')'&& lastChar==='(' || s[i]===']'&& lastChar==='[' || s[i]==='}'&lastChar==='{') {
             stack.pop();
         } else {
             return false
