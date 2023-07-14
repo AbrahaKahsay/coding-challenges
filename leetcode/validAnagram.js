@@ -36,3 +36,9 @@ var isAnagram = function(s, t) {
     return true;
     
 };
+
+// Alternatively it is possible to use the sort method of the javascript built-in function but it's time complexity is worse
+ // let sSorted = s.split('').sort().join('');
+ // let tSorted = t.split('').sort().join('');
+ // if(sSorted ===tSorted) return true;
+ // return false;
