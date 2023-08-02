@@ -3,14 +3,18 @@
  * @return {number[]}
  */
 var findDisappearedNumbers = function(nums) {
-    let disappeared = [];
-    // let arr = new Set(nums)
-    let sorted = nums.sort()
+    let result = [];
+    let seen = new Set();
 
-    for(let i=0; i<=sorted.length; i++){
-        if(i+1 != sorted[i]){
-            disappeared.push(i)
+    for(let i=0; i<nums.length; i++){
+        seen.add(nums[i])
+    }
+
+    for(let j=1; j<=nums.length; j++){
+        if(!seen.has(j)){
+            result.push(j)
         }
     }
-    return disappeared
+
+    return result
 };
