@@ -3,5 +3,8 @@
  * @return {string}
  */
 var frequencySort = function(s) {
+
+let hash = {};
+
     
 };
